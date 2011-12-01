@@ -24,7 +24,7 @@
 			BitmapContextRep * bitmap = [[BitmapContextRep alloc] initWithImage:anImage];
 			BitmapScaleManipulator * scale = [[BitmapScaleManipulator alloc] initWithContext:bitmap];
 			[scale setSizeFittingFrame:BMPointMake(640, 480)];
-			anImage = [[UIImage alloc] initWithCGImage:[scale CGImage]];
+			image = [[UIImage alloc] initWithCGImage:[scale CGImage]];
 #if !__has_feature(objc_arc)
 			[scale release];
 			[bitmap release];
